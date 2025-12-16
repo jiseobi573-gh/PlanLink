@@ -114,15 +114,12 @@ fun TimelineRow(
                 modifier = Modifier
                     .fillMaxHeight()
                     .fillMaxWidth(
-                        (schedule.endMinute - schedule.startMinute).toFloat() / totalMinutes
-                    )
+                        (schedule.endMinute - schedule.startMinute).toFloat() / totalMinutes)
                     .offset(
-                        x = ((schedule.startMinute - minMinute).toFloat() / totalMinutes * 300).dp
-                    )
+                        x = ((schedule.startMinute - minMinute).toFloat() / totalMinutes * 300).dp)
                     .background(
                         if (isProblem) MaterialTheme.colorScheme.error
-                        else MaterialTheme.colorScheme.primary
-                    )
+                        else MaterialTheme.colorScheme.primary)
             )
         }
     }
@@ -185,7 +182,7 @@ fun AnalysisScreen(
                         if (overlapExplanations.isNotEmpty())
                             "⚠ 중복 일정이 있습니다"
                         else
-                            "✅ 중복 일정 없음",
+                            "중복 일정 없음",
                     color =
                         if (overlapExplanations.isNotEmpty())
                             MaterialTheme.colorScheme.error
