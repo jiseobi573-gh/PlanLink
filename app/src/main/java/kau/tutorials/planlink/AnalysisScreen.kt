@@ -97,8 +97,6 @@ fun TimelineRow(
     isProblem: Boolean
 ) {
     Column(modifier = Modifier.fillMaxWidth()) {
-
-        // ✅ 제목을 막대 밖(위)로 빼서 항상 전체 표시
         Text(
             text = schedule.title,
             style = MaterialTheme.typography.bodySmall
