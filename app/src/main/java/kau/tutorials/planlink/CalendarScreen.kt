@@ -61,7 +61,7 @@ fun CalendarScreen(
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            IconButton(onClick = {}) {          //홈으로 navigate
+            IconButton(onClick = {navController.popBackStack()}) {          //홈으로 navigate
                 Icon(
                     imageVector = Icons.AutoMirrored.Filled.ArrowBack,
                     contentDescription = "홈으로"

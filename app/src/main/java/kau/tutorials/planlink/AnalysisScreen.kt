@@ -255,13 +255,6 @@ fun AnalysisScreen(
         Spacer(modifier = Modifier.height(24.dp))
 
         Button(
-            onClick = {},                   //일정 생성 화면 navigate
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            Text("일정 수정하기")
-        }
-
-        Button(
             onClick = { navController.popBackStack() },
             modifier = Modifier.fillMaxWidth()
         ) {
