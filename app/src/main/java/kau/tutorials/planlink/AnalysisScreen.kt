@@ -260,5 +260,12 @@ fun AnalysisScreen(
         ) {
             Text("캘린더로 돌아가기")
         }
+
+        Button(
+            onClick = {},
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("홈으로")
+        }
     }
 }
