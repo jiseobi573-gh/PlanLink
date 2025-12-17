@@ -8,7 +8,6 @@ import androidx.navigation.compose.composable
 
 @Composable
 fun AppNavigation(navController: NavHostController) {
-
     val schedules = listOf(
         Schedule("user1","회의", "2025-12-15", 10*60, 12*60),
         Schedule("user2","병원 예약", "2025-12-15", 11*60 + 30, 13*60),
